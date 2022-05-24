@@ -47,9 +47,7 @@ escreval("Informe o primeiro número:")
 leia(n1)
 escreval("Informe o segundo número:")
 leia(n2)
-divisao <- n1/n2
-escreval("A divisão é:")
-retorne divisao
+retorne n1 / n2
 fimfuncao
 
 inicio
@@ -70,7 +68,7 @@ enquanto opcao <> 9 faca
       escreval("O resultado da subtracao é:", f_subtracao())
       escreval(" ")
    caso 3
-      escreval("O resultado da multiplicacao é:", f_divisao())
+      escreval("O resultado da divisao é:", f_divisao())
       escreval(" ")
    caso 4
       escreval("O resultado da multiplicacao é:", f_multiplicacao())
