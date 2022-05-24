@@ -25,10 +25,17 @@ inicio
 fimfuncao
 
 
-funcao f_multiplicacao
+funcao f_multiplicacao : real
 var
+multn1, multn2 : inteiro
+resultado : inteiro
 inicio
-
+escreval("Informe o primeiro numero:")
+leia(multn1)
+escreval("Informe o segundo numero:")
+leia(multn2)
+resultado <- multn1 * multn2
+retorne resultado
 fimfuncao
 
 
@@ -41,15 +48,17 @@ enquanto opcao <> 9 faca
    escreval("4-Multiplicacao")
    escreval("9-Sair")
    leia(opcao)
+
    escolha(opcao)
    caso 1
       f_soma
    caso 2
-      f_subtrcao
+      f_subtracao
    caso 3
       f_divisao
    caso 4
-      f_multiplicacao
+      escreval("O resultado da multiplicacao é:", f_multiplicacao)
+      escreval(" ")
    caso 9
       escreval("Finalizado com sucesso")
    fimescolha
