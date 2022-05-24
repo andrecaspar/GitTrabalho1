@@ -40,8 +40,16 @@ fimfuncao
 
 funcao f_divisao : real
 var
+divisao: real
+n1, n2: inteiro
 inicio
-retorne
+escreval("Informe o primeiro número:")
+leia(n1)
+escreval("Informe o segundo número:")
+leia(n2)
+divisao <- n1/n2
+escreval("A divisão é:")
+retorne divisao
 fimfuncao
 
 inicio
