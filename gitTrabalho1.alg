@@ -3,7 +3,7 @@ algoritmo "OperacoesBASICAS"
 var
 opcao : inteiro
 
-funcao f_soma (n_p1, n_p2: inteiro) : inteiro
+funcao f_soma : inteiro
 var
 soma, n1, n2: inteiro
 inicio
@@ -11,8 +11,7 @@ escreval("Informe o primeiro número:")
 leia(n1)
 escreval("Informe o segundo número:")
 leia(n2)
-ecsreval("O resultado da soma é =" n1 + n2)
-retorne soma
+retorne n1 + n2
 fimfuncao
 
 funcao f_subtracao : inteiro
@@ -24,13 +23,7 @@ escreval("Informe o primeiro numero:")
 leia(subn1)
 escreval("Informe o segundo numero:")
 leia(subn2)
-resultado <- subn1 - subn2
-retorne resultado
-fimfuncao
-
-funcao f_divisao : real
-var
-inicio
+retorne subn1 - subn2
 fimfuncao
 
 funcao f_multiplicacao : real
@@ -38,14 +31,17 @@ var
 multn1, multn2 : inteiro
 resultado : inteiro
 inicio
-fimfuncao
-
 escreval("Informe o primeiro numero:")
 leia(multn1)
 escreval("Informe o segundo numero:")
 leia(multn2)
-resultado <- multn1 * multn2
-retorne resultado
+retorne multn1 * multn2
+fimfuncao
+
+funcao f_divisao : real
+var
+inicio
+retorne
 fimfuncao
 
 inicio
@@ -57,18 +53,19 @@ enquanto opcao <> 9 faca
    escreval("4-Multiplicacao")
    escreval("9-Sair")
    leia(opcao)
-
+   limpatela
    escolha(opcao)
    caso 1
       escreval("O resultado da soma é:", f_soma)
       escreval(" ")
    caso 2
-      escreval("O resultado da subtracao é:", f_subtracao)
+      escreval("O resultado da subtracao é:", f_subtracao())
       escreval(" ")
    caso 3
-      f_divisao
+      escreval("O resultado da multiplicacao é:", f_divisao())
+      escreval(" ")
    caso 4
-      escreval("O resultado da multiplicacao é:", f_multiplicacao)
+      escreval("O resultado da multiplicacao é:", f_multiplicacao())
       escreval(" ")
    caso 9
       escreval("Finalizado com sucesso")
