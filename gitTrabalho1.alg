@@ -1,15 +1,19 @@
-algoritmo "OperacaesBASICAS"
+algoritmo "OperacoesBASICAS"
 
 var
 opcao : inteiro
 
-
-funcao f_soma
+funcao f_soma (n_p1, n_p2: inteiro) : inteiro
 var
+soma, n1, n2: inteiro
 inicio
-
+escreval("Informe o primeiro número:")
+leia(n1)
+escreval("Informe o segundo número:")
+leia(n2)
+ecsreval("O resultado da soma é =" n1 + n2)
+retorne soma
 fimfuncao
-
 
 funcao f_subtracao : inteiro
 var
@@ -24,19 +28,18 @@ resultado <- subn1 - subn2
 retorne resultado
 fimfuncao
 
-
-funcao f_divisao
+funcao f_divisao : real
 var
 inicio
-
 fimfuncao
-
 
 funcao f_multiplicacao : real
 var
 multn1, multn2 : inteiro
 resultado : inteiro
 inicio
+fimfuncao
+
 escreval("Informe o primeiro numero:")
 leia(multn1)
 escreval("Informe o segundo numero:")
@@ -44,7 +47,6 @@ leia(multn2)
 resultado <- multn1 * multn2
 retorne resultado
 fimfuncao
-
 
 inicio
 enquanto opcao <> 9 faca
@@ -58,7 +60,8 @@ enquanto opcao <> 9 faca
 
    escolha(opcao)
    caso 1
-      f_soma
+      escreval("O resultado da soma é:", f_soma)
+      escreval(" ")
    caso 2
       escreval("O resultado da subtracao é:", f_subtracao)
       escreval(" ")
