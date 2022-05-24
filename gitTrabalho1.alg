@@ -11,10 +11,17 @@ inicio
 fimfuncao
 
 
-funcao f_subtracao
+funcao f_subtracao : inteiro
 var
+subn1, subn2 : inteiro
+resultado : inteiro
 inicio
-
+escreval("Informe o primeiro numero:")
+leia(subn1)
+escreval("Informe o segundo numero:")
+leia(subn2)
+resultado <- subn1 - subn2
+retorne resultado
 fimfuncao
 
 
@@ -53,7 +60,8 @@ enquanto opcao <> 9 faca
    caso 1
       f_soma
    caso 2
-      f_subtracao
+      escreval("O resultado da subtracao é:", f_subtracao)
+      escreval(" ")
    caso 3
       f_divisao
    caso 4
