@@ -20,7 +20,7 @@ n[8] <- 19
 n[9] <- 57
 para i <- 0 ate 9 passo 1 faca
    se (n[i] mod 2 = 0) entao
-    escreval("Números pares:", n[i])
+    escreval("NÃºmeros pares:", n[i])
    fimse
 fimpara
 fimfuncao
@@ -28,7 +28,7 @@ fimfuncao
 inicio
 enquanto opcao <> 9 faca
    escreval("Informe a operacao desejada")
-   escreval("1-Números Primos")
+   escreval("1-NÃºmeros Primos")
    escreval("2-Pares e Impares")
    escreval("9-Sair")
    leia(opcao)
