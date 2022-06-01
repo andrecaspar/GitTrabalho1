@@ -19,8 +19,8 @@ n[7] <- 21
 n[8] <- 19
 n[9] <- 57
 para i <- 0 ate 9 passo 1 faca
-   se (n[i] mod 2 = 1) entao
-    escreval("Números ímpares:", n[i])
+   se (n[i] mod 2 <> 0) entao
+    escreval("NÃºmeros Ã­mpares:", n[i])
    fimse
 fimpara
 fimfuncao
